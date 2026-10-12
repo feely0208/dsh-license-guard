@@ -1,0 +1,8 @@
+{
+  "id": "LIC-UNKNOWN",
+  "title": "依赖的许可证无法识别",
+  "severity": "medium",
+  "source": "无许可证 = 默认保留全部权利（著作权法默认规则）",
+  "advice": "「没写许可证」不等于「可以随便用」—— 法律默认是「保留所有权利」。请到该依赖仓库确认，或替换为有明确许可的等价库。",
+  "check": { "type": "dependency-license", "match": [], "flagUnknown": true }
+}

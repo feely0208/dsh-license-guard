@@ -1,0 +1,10 @@
+{
+  "name": "demo-project",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "left-pad": "^1.3.0",
+    "some-gpl-lib": "^2.0.0",
+    "mystery-lib": "^1.0.0"
+  }
+}

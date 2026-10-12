@@ -1,0 +1,12 @@
+{
+  "id": "LIC-GPL",
+  "title": "依赖使用 GPL/AGPL 强传染性许可",
+  "severity": "high",
+  "source": "GNU GPL-2.0/3.0 §5 · AGPL-3.0 §13 —— 分发衍生作品时须以同许可开放源代码",
+  "advice": "确认该依赖是否被分发（打包进产物即算）。若是，需移除、替换为宽松许可的等价库，或按 GPL 要求开放你的代码。AGPL 还覆盖网络服务场景。",
+  "check": {
+    "type": "dependency-license",
+    "match": ["GPL-2.0", "GPL-3.0", "GPL-2.0-only", "GPL-3.0-only", "GPL-2.0-or-later", "GPL-3.0-or-later", "AGPL-3.0", "AGPL", "GPL"],
+    "flagUnknown": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "LIC-SELF-FIELD",
+  "title": "package.json 缺少 license 字段",
+  "severity": "low",
+  "source": "npm 规范 —— license 字段用于下游自动识别许可",
+  "advice": "在 package.json 加 \"license\": \"MIT\"（或用 SPDX 标识符）。下游的许可扫描工具依赖这个字段，缺了会被判定为「未知许可」。",
+  "check": { "type": "package-field", "file": "package.json", "field": "license", "require": true }
+}

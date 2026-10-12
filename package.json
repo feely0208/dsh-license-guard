@@ -1,0 +1,65 @@
+{
+  "name": "@deepwhale-cn/dsh-license-guard",
+  "version": "0.1.0",
+  "description": "开源许可合规检查：扫描依赖树，找出 GPL/AGPL 传染、许可未知等风险 —— 发布前、开源前、被审计时跑一遍。",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin",
+    "skill",
+    "license",
+    "license-compliance",
+    "gpl",
+    "agpl",
+    "copyleft",
+    "open-source",
+    "compliance",
+    "audit",
+    "sbom",
+    "security",
+    "guard"
+  ],
+  "files": [
+    "lib",
+    "skill",
+    "bin",
+    "rules",
+    "docs",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "dsh-license-guard": "./bin/cli.mjs"
+  },
+  "engines": {
+    "dsh": ">=0.1.0-rc.6",
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@deepwhale-cn/dsh-guard-core": "^0.1.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-skill": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feely0208/dsh-license-guard.git"
+  },
+  "homepage": "https://www.deepwhale.org.cn/skills.html",
+  "bugs": {
+    "url": "https://github.com/feely0208/dsh-license-guard/issues"
+  }
+}

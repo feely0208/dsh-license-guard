@@ -1,0 +1,12 @@
+{
+  "id": "LIC-WEAK-COPYLEFT",
+  "title": "依赖使用弱传染性许可（需留意）",
+  "severity": "low",
+  "source": "LGPL-3.0 §4 · MPL-2.0 §3.3 · EPL-2.0 —— 修改该库本身时需以同许可开放",
+  "advice": "仅在「修改了该库源码」或「以特定方式静态链接」时才有义务。若只是原样调用，通常无需开放自己的代码 —— 但请确认链接方式。",
+  "check": {
+    "type": "dependency-license",
+    "match": ["LGPL", "MPL-2.0", "MPL", "EPL-2.0", "EPL", "CDDL"],
+    "flagUnknown": false
+  }
+}

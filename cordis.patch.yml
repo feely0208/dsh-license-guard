@@ -1,0 +1,5 @@
+# @deepwhale-cn/dsh-license-guard 的组合层
+# profile 在 dsh.profile.bundles 里列出本包后，这一层会把插件本身挂进组合。
+- insert:
+    - id: license-guard
+      name: '@deepwhale-cn/dsh-license-guard'

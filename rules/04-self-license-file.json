@@ -1,0 +1,8 @@
+{
+  "id": "LIC-SELF-FILE",
+  "title": "项目根目录缺少 LICENSE 文件",
+  "severity": "medium",
+  "source": "著作权法默认规则 —— 未声明许可 = 保留所有权利",
+  "advice": "加一个 LICENSE 文件（MIT / Apache-2.0 等）。注意：本工具本身也把「仓库根目录有 package.json」列为市场收录要求，LICENSE 同属基础文件。",
+  "check": { "type": "file-exists", "globs": ["LICENSE", "LICENSE.*", "LICENCE", "COPYING"], "require": true }
+}
