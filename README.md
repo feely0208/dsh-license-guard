@@ -44,7 +44,7 @@ dsh-license-guard --demo         # 用内置样本看效果
 dsh-license-guard --html r.html  # 输出 HTML 报告
 ```
 
-![dsh-license-guard 的检查报告示例](https://raw.githubusercontent.com/feely0208/dsh-license-guard/main/docs/report.png)
+![dsh-license-guard 的检查报告示例](https://www.deepwhale.org.cn/plugin-assets/dsh-license-guard/report.png)
 
 ## 覆盖范围
 
