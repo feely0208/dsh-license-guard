@@ -49,7 +49,7 @@
     }
   },
   "dependencies": {
-    "@deepwhale-cn/dsh-guard-core": "^0.1.0"
+    "@deepwhale-cn/dsh-guard-core": "^0.4.3"
   },
   "peerDependencies": {
     "@deepseek-ai/dsh-skill": "*"
