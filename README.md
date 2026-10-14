@@ -2,6 +2,9 @@
 
 [![Listed on dsh-plugin.org](https://dsh-plugin.org/badges/listed.svg)](https://dsh-plugin.org/plugins/feely0208/dsh-license-guard)
 
+
+**关键词**：开源许可 · 开源协议 · 许可证合规 · GPL 传染 · AGPL · 许可风险 · 开源合规
+**Keywords**: open source license · license compliance · GPL · AGPL · copyleft · license risk
 **开源许可合规检查** —— 扫依赖树，找出 GPL/AGPL 传染、许可未知等风险。
 
 发布前、开源前、被审计时跑一遍。退出码可挂 CI。
