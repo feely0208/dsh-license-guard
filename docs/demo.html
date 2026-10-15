@@ -1,0 +1,75 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; background:#0d0f13; display:flex; justify-content:center;
+         align-items:flex-start; padding:22px; font-family:-apple-system,"PingFang SC",
+         "Helvetica Neue",sans-serif; }
+  .win { width:1180px; border-radius:11px; overflow:hidden;
+          box-shadow:0 14px 44px rgba(0,0,0,.55); }
+  .bar { background:#2a2d34; padding:11px 15px; display:flex; align-items:center; gap:9px; }
+  .dot { width:12px; height:12px; border-radius:50%; }
+  .t { margin-left:11px; color:#7a8290; font-size:13px; letter-spacing:.02em; }
+  .term { background:#1b1d22; padding:20px 22px 24px; font-family:"SF Mono",Menlo,Consolas,
+           "PingFang SC",monospace; font-size:13.5px; line-height:1.72; }
+  .cmd { color:#5ee08a; margin-bottom:13px; font-size:13.5px; }
+  .cmd b { color:#fff; font-weight:600; }
+  .l { white-space:pre-wrap; word-break:break-word; }
+</style></head><body>
+  <div class="win">
+    <div class="bar">
+      <span class="dot" style="background:#ff5f57"></span>
+      <span class="dot" style="background:#febc2e"></span>
+      <span class="dot" style="background:#28c840"></span>
+      <span class="t">dsh-license-guard · demo</span>
+    </div>
+    <div class="term">
+      <div class="cmd">$ <b>dsh-license-guard --demo</b></div>
+      <div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#d8dee9">  【演示模式】使用内置样本，不是你的真实项目。</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#d8dee9">  深鲸守护 · 开源许可合规 v0.1.0</span></div>
+<div class="l"><span style="color:#d8dee9">  ──────────────────────────────────────────────────────────────────</span></div>
+<div class="l"><span style="color:#d8dee9">  扫描范围   内置演示样本 · 故意有问题的项目</span></div>
+<div class="l"><span style="color:#d8dee9">             2 个文件 · 0 个目录已跳过</span></div>
+<div class="l"><span style="color:#d8dee9">  检查规则   5/5 条</span></div>
+<div class="l"><span style="color:#ffd166">  命中       6 条</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#ff6b6b">  【高】2 条</span></div>
+<div class="l"><span style="color:#7a8290">    · 依赖使用 GPL/AGPL 强传染性许可</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  package-lock.json</span></div>
+<div class="l"><span style="color:#7a8290">      证据  some-gpl-lib@2.4.1 —— GPL-3.0</span></div>
+<div class="l"><span style="color:#7a8290">      依据  GNU GPL-2.0/3.0 §5 · AGPL-3.0 §13 —— 分发衍生作品时须以同许可开放源代码</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  确认该依赖是否被分发（打包进产物即算）。若是，需移除、替换为宽松许可的等价库，或按 GPL 要求开放你的代码。AGPL 还覆盖网络服务场景。</span></div>
+<div class="l"><span style="color:#7a8290">    · 依赖使用 GPL/AGPL 强传染性许可</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  package-lock.json</span></div>
+<div class="l"><span style="color:#7a8290">      证据  agpl-tool@0.9.0 —— AGPL-3.0</span></div>
+<div class="l"><span style="color:#7a8290">      依据  GNU GPL-2.0/3.0 §5 · AGPL-3.0 §13 —— 分发衍生作品时须以同许可开放源代码</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  确认该依赖是否被分发（打包进产物即算）。若是，需移除、替换为宽松许可的等价库，或按 GPL 要求开放你的代码。AGPL 还覆盖网络服务场景。</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#ffd166">  【中】2 条</span></div>
+<div class="l"><span style="color:#7a8290">    · 依赖的许可证无法识别</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  package-lock.json</span></div>
+<div class="l"><span style="color:#7a8290">      证据  mystery-lib@1.0.0 —— 许可证未知</span></div>
+<div class="l"><span style="color:#7a8290">      依据  无许可证 = 默认保留全部权利（著作权法默认规则）</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  「没写许可证」不等于「可以随便用」—— 法律默认是「保留所有权利」。请到该依赖仓库确认，或替换为有明确许可的等价库。</span></div>
+<div class="l"><span style="color:#7a8290">    · 项目根目录缺少 LICENSE 文件</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  LICENSE</span></div>
+<div class="l"><span style="color:#7a8290">      证据  以下任一均不存在：LICENSE / LICENSE.* / LICENCE / COPYING</span></div>
+<div class="l"><span style="color:#7a8290">      依据  著作权法默认规则 —— 未声明许可 = 保留所有权利</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  加一个 LICENSE 文件（MIT / Apache-2.0 等）。注意：本工具本身也把「仓库根目录有 package.json」列为市场收录要求，LICENSE 同属基础文件。</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#5ee08a">  【低】2 条</span></div>
+<div class="l"><span style="color:#7a8290">    · 依赖使用弱传染性许可（需留意）</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  package-lock.json</span></div>
+<div class="l"><span style="color:#7a8290">      证据  lgpl-helper@3.2.0 —— LGPL-3.0</span></div>
+<div class="l"><span style="color:#7a8290">      依据  LGPL-3.0 §4 · MPL-2.0 §3.3 · EPL-2.0 —— 修改该库本身时需以同许可开放</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  仅在「修改了该库源码」或「以特定方式静态链接」时才有义务。若只是原样调用，通常无需开放自己的代码 —— 但请确认链接方式。</span></div>
+<div class="l"><span style="color:#7a8290">    · package.json 缺少 license 字段</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  package.json</span></div>
+<div class="l"><span style="color:#7a8290">      证据  缺少字段 license</span></div>
+<div class="l"><span style="color:#7a8290">      依据  npm 规范 —— license 字段用于下游自动识别许可</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  在 package.json 加 &quot;license&quot;: &quot;MIT&quot;（或用 SPDX 标识符）。下游的许可扫描工具依赖这个字段，缺了会被判定为「未知许可」。</span></div><div class="l" style="color:#7a8290">…（输出过长已截断）</div>
+    </div>
+  </div>
+</body></html>

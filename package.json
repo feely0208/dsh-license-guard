@@ -1,6 +1,6 @@
 {
   "name": "@deepwhale-cn/dsh-license-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "开源许可合规检查：扫描依赖树，找出 GPL/AGPL 传染、许可未知等风险 —— 发布前、开源前、被审计时跑一遍。",
   "type": "module",
   "license": "MIT",
@@ -24,12 +24,13 @@
   ],
   "files": [
     "lib",
-    "skill",
     "bin",
     "rules",
-    "docs",
+    "skill",
     "cordis.patch.yml",
-    "README.md"
+    "tests/fixtures",
+    "README.md",
+    "LICENSE"
   ],
   "main": "./lib/index.js",
   "exports": {

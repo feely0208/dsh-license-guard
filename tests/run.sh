@@ -7,6 +7,7 @@
 # 输出五个指标：漏报 / 误报 / 规则覆盖率 / 溯源完整性 / 确定性
 
 set -uo pipefail
+export PATH="/usr/local/bin:$PATH"
 cd "$(dirname "$0")/.."
 
 PASS=0; FAIL=0
