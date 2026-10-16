@@ -20,7 +20,9 @@
     "audit",
     "sbom",
     "security",
-    "guard"
+    "guard",
+    "开源许可",
+    "许可证合规"
   ],
   "files": [
     "lib",
