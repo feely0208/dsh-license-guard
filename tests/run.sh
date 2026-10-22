@@ -42,7 +42,7 @@ for spec in "LIC-GPL|some-gpl-lib|high" "LIC-GPL|agpl-tool|high" \
             "LIC-WEAK-COPYLEFT|lgpl-helper|low" "LIC-SELF-FIELD|license|low"; do
   IFS='|' read -r rid ev sev <<< "$spec"
   r=$(check_find "$rid" "$ev" "$sev")
-  [ "$r" = "OK" ] && ok "$rid 报出 $ev（$sev）" || bad "$rid × $ev → $r"
+  [ "$r" = "OK" ] && ok "$rid 报出 ${ev}（${sev}）" || bad "$rid × $ev → $r"
 done
 
 # ── ② 合规样本：必须一条都不报（误报测试）─────────────────────
